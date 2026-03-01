@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sembrar Futuro - Asociación Civil</title>
+    <!-- Tailwind CSS (Framework de diseño) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome (Iconos) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        /* Imagen de fondo representativa con filtro verde oscuro para resaltar textos */
+        .bg-hero {
+            background: linear-gradient(rgba(16, 185, 129, 0.85), rgba(6, 78, 59, 0.95)), url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+        }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Barra de Navegación -->
+    <header class="bg-white shadow-sm w-full py-4 px-6 md:px-12 flex justify-between items-center z-10 sticky top-0">
+        <div class="flex items-center gap-2 text-emerald-700">
+            <i class="fa-solid fa-seedling text-2xl"></i>
+            <span class="text-xl font-bold tracking-tight">Sembrar Futuro</span>
+        </div>
+        <div>
+            <span class="bg-amber-100 text-amber-800 text-xs md:text-sm font-semibold px-4 py-1.5 rounded-full border border-amber-200 shadow-sm flex items-center gap-2">
+                <i class="fa-solid fa-hammer"></i> 
+                <span class="hidden md:inline">Sitio web en renovación</span>
+                <span class="md:hidden">En renovación</span>
+            </span>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="flex-grow">
+        <!-- Sección Principal (Hero) -->
+        <section class="bg-hero text-white py-20 px-6 md:px-12 text-center md:text-left flex flex-col md:flex-row items-center justify-between shadow-inner">
+            <div class="md:w-1/2 max-w-2xl mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+                    Estamos preparando una <span class="text-emerald-300">nueva experiencia</span> digital.
+                </h1>
+                <p class="text-lg md:text-xl text-gray-100 mb-8 font-light leading-relaxed">
+                    Mientras construimos nuestra nueva página web, nuestra misión con la juventud de <strong class="font-semibold text-white">El Impenetrable Chaqueño</strong> no se detiene. Desde 2004, trabajamos juntos para mostrarles un camino de futuro.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="mailto:info@sembrarfuturo.org.ar" class="bg-emerald-500 hover:bg-emerald-400 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 shadow-lg text-center flex items-center justify-center gap-2">
+                        <i class="fa-regular fa-envelope"></i> Contactanos
+                    </a>
+                    <a href="#colaborar" class="bg-white text-emerald-800 hover:bg-gray-100 font-semibold py-3 px-6 rounded-lg transition duration-300 shadow-lg text-center flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-hand-holding-heart text-emerald-600"></i> Cómo ayudar hoy
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Tarjeta de Impacto (Lado derecho en escritorio) -->
+            <div class="md:w-5/12 hidden md:block">
+               <div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 shadow-2xl">
+                    <h3 class="text-2xl font-bold mb-5 flex items-center gap-3"><i class="fa-solid fa-chart-line text-emerald-300"></i> Nuestro Impacto</h3>
+                    <ul class="space-y-4 text-gray-100">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check-circle text-emerald-400 mt-1"></i>
+                            <p><strong>+20 Años</strong> apoyando a escuelas primarias y secundarias rurales.</p>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check-circle text-emerald-400 mt-1"></i>
+                            <p><strong>+300 Egresados</strong> de secundaria en los últimos 17 años.</p>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-star text-amber-300 mt-1"></i>
+                            <p><strong>Nuevo Desafío:</strong> ¡Vamos por los primeros 10 egresados de nivel terciario en los próximos 5 años!</p>
+                        </li>
+                    </ul>
+               </div>
+            </div>
+        </section>
+
+        <!-- Pilares de Acción -->
+        <section class="py-16 px-6 md:px-12 max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">¿En qué trabajamos?</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Ponemos todo nuestro esfuerzo en desarrollar estas cuatro áreas para tratar de mostrar un camino de salida ante la vulnerabilidad social.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center hover:shadow-md hover:-translate-y-1 transition duration-300">
+                    <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Educación</h3>
+                    <p class="text-gray-500 text-sm">Fondo de becas, apoyo a estudiantes terciarios y apadrinamiento de escuelas.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center hover:shadow-md hover:-translate-y-1 transition duration-300">
+                    <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
+                        <i class="fa-solid fa-futbol"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Deportes</h3>
+                    <p class="text-gray-500 text-sm">Fomentamos la actividad física como una poderosa herramienta de integración.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center hover:shadow-md hover:-translate-y-1 transition duration-300">
+                    <div class="w-16 h-16 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
+                        <i class="fa-solid fa-masks-theater"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Cultura</h3>
+                    <p class="text-gray-500 text-sm">Organizamos viajes educativos y culturales a Buenos Aires y Miraflores.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center hover:shadow-md hover:-translate-y-1 transition duration-300">
+                    <div class="w-16 h-16 bg-red-100 text-red-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
+                        <i class="fa-solid fa-notes-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Salud</h3>
+                    <p class="text-gray-500 text-sm">Impulsamos el cuidado integral para mejorar la calidad de vida en la comunidad.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Llamado a la Acción (Donar/Voluntario) -->
+        <section id="colaborar" class="bg-emerald-50 py-16 px-6 md:px-12 border-t border-emerald-100">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Comencemos a ayudar a quien más lo necesita</h2>
+                <p class="text-lg text-gray-600 mb-8">Nuestra web principal volverá pronto. Mientras tanto, si deseás ayudarnos, podés comunicarte con nuestro equipo directamente.</p>
+                
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <!-- Recuerda cambiar 'info@sembrarfuturo.org.ar' si el mail es otro -->
+                    <a href="mailto:info@sembrarfuturo.org.ar?subject=Quiero%20Donar%20a%20Sembrar%20Futuro" class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 px-6 rounded-lg transition shadow-md flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-hand-holding-dollar"></i> Donar Ahora
+                    </a>
+                    <a href="mailto:info@sembrarfuturo.org.ar?subject=Quiero%20ser%20Voluntario" class="bg-white text-emerald-700 border border-emerald-200 hover:bg-emerald-100 font-semibold py-3 px-6 rounded-lg transition shadow-sm flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-users"></i> Convertite en Voluntario
+                    </a>
+                    <a href="mailto:info@sembrarfuturo.org.ar?subject=Quiero%20ser%20Padrino" class="bg-white text-emerald-700 border border-emerald-200 hover:bg-emerald-100 font-semibold py-3 px-6 rounded-lg transition shadow-sm flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-star"></i> Sé un Padrino
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-gray-900 text-gray-400 py-10 text-center px-6">
+        <div class="mb-4">
+            <i class="fa-solid fa-seedling text-emerald-500 text-4xl mb-3"></i>
+            <h4 class="text-white text-xl font-semibold">Sembrar Futuro</h4>
+            <p class="text-sm mt-2 max-w-md mx-auto">Desde 2004, junto a la juventud de El Impenetrable y trabajando por su futuro. ¡Sumate!</p>
+        </div>
+        <div class="mt-8 pt-6 border-t border-gray-800">
+            <p class="text-xs">&copy; 2024 Sembrar Futuro – Asociación Civil. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
